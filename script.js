@@ -11,3 +11,9 @@ let navButton = document.querySelector('header button');
 navButton.addEventListener('click', function() {
     navHidden.classList.toggle('collapse');
 });
+
+let card1 = document.getElementsByClassName('card')[0];
+let button2 = card1.getElementsByTagName('button')[1];
+button2.addEventListener('click', function() {
+    card1.style.color = 'red';
+});
