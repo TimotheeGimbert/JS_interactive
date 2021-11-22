@@ -13,7 +13,18 @@ navButton.addEventListener('click', function() {
 });
 
 let card1 = document.getElementsByClassName('card')[0];
-let button2 = card1.getElementsByTagName('button')[1];
-button2.addEventListener('click', function() {
+let card1button2 = card1.getElementsByTagName('button')[1];
+card1button2.addEventListener('click', function() {
     card1.style.color = 'red';
+});
+
+let card2 = document.getElementsByClassName('card')[1];
+let button2 = card2.getElementsByTagName('button')[1];
+button2.addEventListener('click', function() {
+    if (card2.style.color === 'green') {
+        card2.style.color = 'black';
+    }
+    else {
+        card2.style.color = 'green';
+    }
 });
