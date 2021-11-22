@@ -1,7 +1,13 @@
-footer = document.getElementsByTagName('footer')[0];
+let footer = document.getElementsByTagName('footer')[0];
 
 let nbClicks = 0;
 footer.addEventListener('click', function() {
     nbClicks += 1;
     console.log('clique ' + nbClicks);
+});
+
+let navHidden = document.getElementById('navbarHeader');
+let navButton = document.querySelector('header button');
+navButton.addEventListener('click', function() {
+    navHidden.classList.toggle('collapse');
 });
