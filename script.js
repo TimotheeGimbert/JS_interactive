@@ -28,3 +28,17 @@ button2.addEventListener('click', function() {
         card2.style.color = 'green';
     }
 });
+
+let head = document.getElementsByTagName('head')[0];
+let navbar = document.getElementsByClassName('navbar')[0];
+let bootstrapCDN = head.getElementsByTagName('link')[0].href;
+navbar.addEventListener('dblclick', function() {
+  if (head.getElementsByTagName('link')[0].href !== bootstrapCDN) {
+    head.getElementsByTagName('link')[0].href = bootstrapCDN;
+    console.log(bootstrapCDN);
+  }
+  else {
+    head.getElementsByTagName('link')[0].href = '';
+    console.log(bootstrapCDN);
+  }
+});
