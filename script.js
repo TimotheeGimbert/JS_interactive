@@ -1,5 +1,7 @@
 footer = document.getElementsByTagName('footer')[0];
 
+let nbClicks = 0;
 footer.addEventListener('click', function() {
-    console.log('clique');
+    nbClicks += 1;
+    console.log('clique ' + nbClicks);
 });
