@@ -1,23 +1,26 @@
+// Fonctionnalité 1
 let footer = document.getElementsByTagName('footer')[0];
-
 let nbClicks = 0;
 footer.addEventListener('click', function() {
     nbClicks += 1;
     console.log('clique ' + nbClicks);
 });
 
+// Fonctionnalité 2
 let navHidden = document.getElementById('navbarHeader');
 let navButton = document.querySelector('header button');
 navButton.addEventListener('click', function() {
     navHidden.classList.toggle('collapse');
 });
 
+// Fonctionnalité 3
 let card1 = document.getElementsByClassName('card')[0];
 let card1button2 = card1.getElementsByTagName('button')[1];
 card1button2.addEventListener('click', function() {
     card1.style.color = 'red';
 });
 
+// Fonctionnalité 4
 let card2 = document.getElementsByClassName('card')[1];
 let button2 = card2.getElementsByTagName('button')[1];
 button2.addEventListener('click', function() {
@@ -29,6 +32,7 @@ button2.addEventListener('click', function() {
     }
 });
 
+// Fonctionnalité 5
 let head = document.getElementsByTagName('head')[0];
 let navbar = document.getElementsByClassName('navbar')[0];
 let bootstrapCDN = head.getElementsByTagName('link')[0].href;
@@ -43,7 +47,7 @@ navbar.addEventListener('dblclick', function() {
   }
 });
 
-
+// Fonctionnalité 6
 let cardsList = document.getElementsByClassName('card');
 for (let i = 0; i < cardsList.length; i++) { 
   let card = cardsList[i];
@@ -57,10 +61,4 @@ for (let i = 0; i < cardsList.length; i++) {
     }
     card.getElementsByClassName('card-text')[0].classList.toggle('collapse');
   });
-}
-
-
-
-//let btn = card.querySelector('btn-group btn')[0];
-//  btn.addEventListener('mouseover', function() {
-//    let pic = card.getElementsByTagName('img')[0].style.width = '20%';
+};
