@@ -42,3 +42,25 @@ navbar.addEventListener('dblclick', function() {
     console.log(bootstrapCDN);
   }
 });
+
+
+let cardsList = document.getElementsByClassName('card');
+
+let card = cardsList[0];
+let buttonEvent = card.getElementsByTagName('button')[0];
+buttonEvent.addEventListener('mouseover', function() {
+  if (card.getElementsByTagName('img')[0].style.width !== '20%') {
+    card.getElementsByTagName('img')[0].style.width = '20%';
+  }
+  else {
+    card.getElementsByTagName('img')[0].style.width = '100%';
+  }
+  card.getElementsByClassName('card-text')[0].classList.toggle('collapse');
+});
+
+
+
+
+//let btn = card.querySelector('btn-group btn')[0];
+//  btn.addEventListener('mouseover', function() {
+//    let pic = card.getElementsByTagName('img')[0].style.width = '20%';
